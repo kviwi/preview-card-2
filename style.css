@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-card {
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  height: 510px;
+  border-radius: 13px;
+  padding: 20px;
+  position: relative;
+}
+
+.img-equilibrium {
+  width: 258px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.img-equilibrium:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(178, 100%, 50%), hsl(178, 100%, 50%));
+}
+
+.view-icn {
+  position: absolute;
+  top: 142px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+
+.preview-card-header {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.preview-card-header:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.description-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.preview-card-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.price {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+
+.price span {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.remaining-time {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+hr {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+}
+
+.author {
+  color: hsl(0, 0%, 100%);
+}
+
+.author:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.img-creator {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
