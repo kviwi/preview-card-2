@@ -24,13 +24,25 @@ body {
 
 .img-equilibrium {
   width: 258px;
+  height: 258px;
   border-radius: 8px;
   margin-bottom: 15px;
+  background-image: url("images/image-equilibrium.jpg");
+  background-size: contain;
 }
 
 .img-equilibrium:hover {
+  background-image: linear-gradient(
+      hsla(178, 100%, 50%, 0.5),
+      hsla(178, 100%, 50%, 0.459)
+    ),
+    url(images/image-equilibrium.jpg);
   cursor: pointer;
-  background-image: linear-gradient(hsl(178, 100%, 50%), hsl(178, 100%, 50%));
+}
+
+/* This code makes the icon appear adds cursor piinter on the icon. */
+.img-equilibrium:hover + .view-icn {
+  display: block;
 }
 
 .view-icn {
@@ -38,7 +50,7 @@ body {
   top: 142px;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* display: none; */
+  display: none;
 }
 
 .preview-card-header {
